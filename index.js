@@ -22,5 +22,5 @@ app.post('/create',function(req,res){
     });
 })
 
-app.listen(3000);
+
 module.exports = app;
