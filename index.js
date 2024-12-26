@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
+const port = 4000;
 
 app.set("view engine", "ejs");
 app.use(express.json());
@@ -22,5 +23,8 @@ app.post('/create',function(req,res){
     });
 })
 
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+  });
 
 module.exports = app;
