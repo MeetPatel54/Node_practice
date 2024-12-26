@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
-const port = 4000;
-
+const PORT = 4000;
+app.set('views', 'views');
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
